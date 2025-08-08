@@ -22,7 +22,7 @@ This is my personal portfolio website, built to showcase my web development proj
 
 ## 📬 Contact
 
-Reach me at: [your.email@example.com](mailto:husixyz@gmail.com)
+Reach me at: [husixyz@gmail.com]
 
 ---
 
