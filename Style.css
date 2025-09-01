@@ -409,6 +409,7 @@ svg{
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  text-align: center;
   box-shadow: var(--shadow-lg);
   animation: float 3s ease-in-out infinite;
 }
@@ -559,6 +560,7 @@ section {
 .project-image img {
   width: 100%;
   height: 100%;
+  /* object-fit: cover; */
   transition: var(--transition);
 }
 
@@ -742,7 +744,7 @@ section {
 
 .skill-item {
   background: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem;
   border-radius: var(--border-radius);
   backdrop-filter: blur(10px);
   transition: var(--transition);
@@ -812,7 +814,6 @@ section {
 }
 
 .skills-visual {
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -828,7 +829,6 @@ section {
 }
 
 .skills-image .floating-element{
-  padding: 1rem;
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
