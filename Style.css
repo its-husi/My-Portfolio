@@ -1295,12 +1295,21 @@ section {
     gap: 1.5rem;
   }
   
+  .skill-grid{
+    gap: 1rem;
+  }
+
   .skill-item {
     padding: 1.25rem;
   }
   
   .skills-image img {
-    height: 300px;
+    width: 250px;
+  }
+
+  .skills-description{
+    padding: 1.3rem;
+    text-align: center;
   }
   
   .contact-form {
