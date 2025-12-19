@@ -11,6 +11,7 @@
   --bg-dark: #111827;
   --bg-darker:#000;
   --border-color: #e5e7eb;
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--primary-light));
   --border-radius: 0.75rem;
   --transition-old: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
