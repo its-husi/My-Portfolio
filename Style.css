@@ -958,12 +958,12 @@ section {
 }
 
 .skill-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-before);
   padding: 1.5rem 1.5rem;
   border-radius: var(--border-radius);
   backdrop-filter: blur(10px);
   transition: var(--transition);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: var(--border-glass);
 }
 
 .skill-item:hover{
@@ -1040,10 +1040,10 @@ section {
 
 .skills-image .floating-element{
   border-radius: 100%;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-before);
   backdrop-filter: blur(10px);
   transition: var(--transition);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: var(--border-glass);
 }
 
 
