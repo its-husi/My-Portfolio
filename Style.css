@@ -109,7 +109,7 @@ h3 {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--text-secondary);
 }
 
@@ -349,7 +349,7 @@ p {
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .social-links {
@@ -759,6 +759,227 @@ section {
     font-size: 20px;
   }
 }
+
+/* About Me Section */
+
+    .about-section {
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .about-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+
+    .section-badge {
+      display: inline-block;
+      padding: 8px 20px;
+      background: #8b5cf6;
+      color: white;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image-wrapper {
+      position: relative;
+      animation: fadeInLeft 1s ease-out 0.6s both;
+    }
+
+    .about-image-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: visible;
+    }
+
+    .image-placeholder {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3);
+      aspect-ratio: 4/5;
+    }
+
+    .about-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .floating-card {
+      position: absolute;
+      background: white;
+      padding: 16px 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .floating-card svg {
+      color: #8b5cf6;
+    }
+
+    .floating-card.card-1 {
+      top: 60px;
+      right: -20px;
+      animation-delay: 0s;
+    }
+
+    .floating-card.card-2 {
+      bottom: 60px;
+      left: -20px;
+      animation-delay: 1.5s;
+    }
+
+    .card-number {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .card-label {
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .about-text {
+      animation: fadeInRight 1s ease-out 0.6s both;
+    }
+
+    .about-description {
+      margin-bottom: 32px;
+    }
+
+    .about-paragraph {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #4b5563;
+      margin-bottom: 16px;
+    }
+
+    .about-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .highlight-item {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(139, 92, 246, 0.1);
+    }
+
+    .highlight-item:hover {
+      transform: translateX(10px);
+      box-shadow: 0 8px 25px rgba(139, 92, 246, 0.2);
+    }
+
+    .highlight-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--primary-color);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .highlight-info{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .highlight-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    .highlight-text {
+      font-size: 14px;
+      color: #6b7280;
+      margin: 0;
+    }
+
+
+    @media (max-width: 768px) {
+      .about-section {
+        padding: 60px 20px;
+      }
+
+      .section-title {
+        font-size: 32px;
+      }
+
+      .section-subtitle {
+        font-size: 16px;
+      }
+
+      .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .floating-card {
+        padding: 12px 16px;
+      }
+
+      .card-number {
+        font-size: 16px;
+      }
+
+      .card-label {
+        font-size: 10px;
+      }
+
+      .floating-card.card-1 {
+        right: 10px;
+        top: 10px;
+      }
+
+      .floating-card.card-2 {
+        left: 10px;
+        bottom: 10px;
+      }
+    }
 
 /* Projects Section */
 
