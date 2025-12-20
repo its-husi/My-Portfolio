@@ -1480,7 +1480,6 @@ section {
 }
 
 .footer-social .social-link:hover {
-  border: var(--border-glass-hover);
   color: white;
 }
 
